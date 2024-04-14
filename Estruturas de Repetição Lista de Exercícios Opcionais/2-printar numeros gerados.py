@@ -1,0 +1,1 @@
+números = 0 for numeros in range(1001,2000): (if numeros % 11 == 5:)  print(numeros)
