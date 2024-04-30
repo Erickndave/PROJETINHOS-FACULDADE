@@ -1,0 +1,40 @@
+body {
+    background-color: white;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+ol {
+    font-size: 25px;
+}
+
+p {
+    font-size: 17px;
+}
+
+h2 {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+a { 
+    font-size: 17px;
+    text-decoration: underline;
+    color: blue; 
+}

@@ -1,0 +1,250 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: rgb(255, 255, 255);
+    /* height: 100%; */
+    display: grid;
+    place-items: center;
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    color: #e6b30e;
+}
+footer p{
+    color: black;
+}
+
+@keyframes revealText {
+    to {
+        color: #fff;
+    }
+}
+
+@keyframes rollIn {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes rollOut {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(105%);
+    }
+}
+#academias {
+    font-family: 'Poppins', sans-serif;
+}
+.titulos {
+    font-size: 35px;
+    color: #000000;
+    text-align: center;
+    /* margin-bottom: 30px; */
+    margin-top: 2%;
+    margin-bottom: 1%;
+    animation: fadeInUp 2s;
+    animation-fill-mode: both;
+    -webkit-animation: fadeInUp 2s;
+    -webkit-animation-fill-mode: both;
+    opacity: 0;
+}
+table {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+
+    animation: fadeInUp 2s;
+    animation-fill-mode: both;
+    -webkit-animation: fadeInUp 2s;
+    -webkit-animation-fill-mode: both;
+    opacity: 0;
+}
+
+th {
+    /* border: 2px solid #fff; */
+    padding: 15px;
+    background-color: #0D1B2A;
+    color: white;
+    text-align: center;
+}
+td {
+    padding: 15px;
+    background-color: #0D1B2A;
+    color: white;
+    text-align: center;
+}
+
+.line {
+    position: relative;
+    background: rgb(153, 153, 153);
+    width: 108%;
+    height: 1px;
+    right: 21px;
+    margin: 10px;
+}
+
+/* f SOBRE */
+
+/* CLIENTES */
+h3 {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+p {
+    font-size: 1.2rem;
+    color: rgb(161, 161, 161);
+}
+
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    animation: fadeInUp 2s;
+    animation-fill-mode: both;
+    -webkit-animation: fadeInUp 2s;
+    -webkit-animation-fill-mode: both;
+    justify-content: center;
+    opacity: 0;
+}
+.card {
+    position: relative;
+    display: flex;
+    top: 0;
+    margin: 10px;
+    /* width: 300px;
+    height: 320px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.15); */
+}
+
+.cardbot {
+    width: 350px;
+    min-height: 250px;
+    height: auto; /* 250px */
+    padding: 15px 40px 10px 36px;
+    background-color: #1B263B;
+    box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+    border-radius: 10px;
+
+}
+
+.imagem {
+    text-align: center;
+}
+
+img {
+    border-radius: 10px;
+    width: 80px;
+    height: 80px;
+}
+img:hover{
+    filter: none;
+}
+.cnome {
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    color: #fff;
+}
+
+.cnome red {
+    color: #CC1B24;
+}
+
+.cnome blue {
+    color: #0C71CC;
+}
+
+.cnome purple {
+    color: #741BD5;
+}
+
+.cnome amarelo {
+    color: #d5c21b;
+}
+
+.cdesc {
+    font-family: 'Sen', sans-serif;
+    position: relative;
+    padding-top: 3%;
+    text-align: left;
+    color: #CAC6C3;
+    font-size: 18px;
+    max-width: 500px;
+    /* word-wrap: break-word; */
+    /* flex-wrap: wrap; */
+}
+
+.cdesc green {
+    color: #44be2b;
+}
+
+.cdesc blue {
+    color: #0c96cc;
+}
+
+/* f CLIENTES */
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #313131;
+    border-radius: 1px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(110, 110, 110);
+    border-radius: 1px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,70px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,70px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}

@@ -1,0 +1,18 @@
+body {
+    background-color: #fff8e6; /* Fundo branco creme */
+    margin: 20px; /* Adiciona espaçamento em torno da página */
+    padding: 0;
+    font-size: 1.1em; /* Aumenta levemente o tamanho do texto */
+    font-family: Arial, sans-serif; /* Define uma fonte genérica para o texto */
+}
+
+.titulo {
+    font-size: 90px; /* Aumenta o tamanho do título */
+}
+
+.content {
+    padding: 20px;
+}
+
+
+

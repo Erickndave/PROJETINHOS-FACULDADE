@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/viagens.css"/>
+    <title>Viagens</title>
+</head>
+<body>
+
+    <section class="container">
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="historia.html">História da cidade</a></li>
+                <li><a href="parques.html">Parques</a></li>
+                <li><a href="shoppings.html">Shoppings</a></li>
+                <li><a href="viagens.html">Viagens próximas</a></li>
+                <li><a href="restaurantes.html">Restaurantes</a></li>
+                <li><a href="bares.html">Bares</a></li>
+                <li><a href="baladas.html">Baladas</a></li>
+                <li><a href="shows.html">Shows</a></li>
+                <li><a href="teatros.html">Teatros</a></li>
+                <li><a href="exposicoes.html">Exposições</a></li>
+                <li><a href="criancas.html">Opções para crianças</a></li>
+                <li><a href="cinemas.html">Cinemas</a></li>
+                <li><a href="esportes.html">Esportes ao ar livre</a></li>
+                <li><a href="academias.html">Academias</a></li>
+                <li><a href="festivais.html">Festivais gastronômicos</a></li>
+            </ul>
+        </nav> 
+
+        <section>
+
+            <section>
+                <h1>Viagens próximas de Curitiba</h1>
+
+                <div class="imgs" style="margin-bottom: 50px;">
+                    <div>
+                        <a class="indv" href="#"><img src="https://i.ibb.co/w6QvNTf/viajar-de-carro-perto-de-curitiba.jpg" style="height: 300px; width: 570px; margin-left: 3px;"></a>
+                        Carambeí
+                    </div>
+                    <div>
+                        <a href="#" class="indv"><img src="https://i.ibb.co/Jn3PQ1J/carambei-parana-lugares-para-visitar-perto-de-curitiba.jpg" style="height: 300px; width: 570px"></a>
+                        Morretes
+                    </div>
+                </div>
+               
+                <b><p style="font-size: 1.2rem; margin-bottom: 7px; margin-top: 7px;">Sua viagem mais fácil do começo ao fim!</p></b>
+    
+                <p style="margin-bottom: 7px;">Nossa equipe apaixonada e experiente está pronta para ajudar a planejar o itinerário dos seus sonhos.</p>
+    
+                <p>Seja uma praia paradisíaca, uma cidade histórica ou uma aventura na natureza, temos as viagem perfeitas para você.</p>
+                
+                <p style="margin-bottom: 7px;">Embarque nessa jornada conosco e descubra as viagens próximas de Curitiba!</p>
+          
+            </section>
+
+            <fieldset>
+                <label style="--_img: url(https://i.ibb.co/ypS19L2/15ddbd7d-770d-4152-bf30-20b3ecd06b26.jpg); border-radius: 10px;">
+                    <input type="radio" name="images" value="Foto: Fernando de Noronha    ">
+                </label>
+                <label style="--_img: url(https://i.ibb.co/pK6TbhZ/673d55ec-bc49-450a-bd58-0c1baf609873.jpg); border-radius: 10px;">
+                    <input type="radio" name="images" value="Foto: Foz do Iguacu">
+                </label>
+                <label style="--_img: url(https://i.ibb.co/Rzwpmvz/d7190b2b-a811-47f1-90f5-1d313d8796cd.jpg); border-radius: 10px;">
+                    <input type="radio" name="images" value="Foto: Florianopolis" checked>
+                </label>
+                <label style="--_img: url(https://i.ibb.co/MZZLn6P/dfc99270-328e-4a31-b648-0b5dacf89597.jpg); border-radius: 10px;">
+                    <input type="radio" name="images" value="Foto: Rio de Janeiro"> 
+                </label>
+                <label style="--_img: url(https://i.ibb.co/KVdvfVY/3a89cc32-190a-4e40-b797-d3a745369051.jpg); border-radius: 10px;">
+                    <input type="radio" name="images" value="Foto: Gramado">
+                </label>
+            </fieldset>
+            <div id="nome" style="margin-left: 13px;">Foto: Florianópolis</div>
+
+        </section>
+
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 - Um site sobre a cidade de Curitiba - PR. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+<script>
+    const nomeElement = document.querySelector('#nome');
+
+    document.querySelectorAll('input[name="images"]').forEach((input) => {
+        input.addEventListener('click', () => {
+            nomeElement.innerHTML = input.value;
+        });
+    });
+</script>
+</html>
